@@ -1,5 +1,5 @@
 import { createRootRoute, createRoute } from '@tanstack/react-router';
-import { Root } from './components/root';
+import { Root } from './components/Root';
 import InstallPage from './pages/InstallPage';
 import Settings from './pages/Settings';
 import Appointments from './pages/Appointments';
