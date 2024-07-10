@@ -1,0 +1,7 @@
+30/05/2024
+1-Design should be replica of figma every color code and theme and sizes should exactly match to figma
+2-So many unwanted components should be removed otherwise file size will be bigger
+3-no need to create component for button and all as discussed earlier you can use material ui for css components
+4.update .gitignore file 
+5.Try to write minimal amount of code
+6.Write comments above the code (Ex:what and why you are using it?)
