@@ -1080,8 +1080,8 @@ async function uploadChats(
 }
 async function uploadFile(file: File, type: string, DID: string, CID: string) {
   const key = file.name;
-  const bucketName = 'manishexelon';
-  const region = 'ap-south-1';
+  const bucketName = process.env.REACT_APP_BUCKET_NAME;
+  const region = process.env.REACT_APP_AWS_REGION;
 
   try {
     const uploadUrl = await pre_Signed_Url(key);
