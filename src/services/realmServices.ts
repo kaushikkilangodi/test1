@@ -999,14 +999,14 @@ async function deleteAppoitment(id: string) {
 
 async function pre_Signed_Url(key: string) {
   AWS.config.update({
-    accessKeyId: 'AKIA6GBMGVWQAJKZSNOH',
-    secretAccessKey: '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',
-    region: 'ap-south-1',
+    accessKeyId: process.env.REACT_APP_AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.REACT_APP__AWS_SECRET_ACCESS_KEY,
+    region: process.env.REACT_APP_AWS_REGION,
   });
 
   const s3 = new AWS.S3();
   const params = {
-    Bucket: 'manishexelon',
+    Bucket: process.env.REACT_APP_BUCKET_NAME,
     Key: key,
     Expires: 60,
   };
